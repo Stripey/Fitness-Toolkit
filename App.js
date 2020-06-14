@@ -4,7 +4,7 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import HomeScreen from "./src/screens/HomeScreen";
 import RepMaxScreen from "./src/screens/RepMaxScreen";
-
+import PlateCalculatorScreen from "./src/screens/PlateCalculatorScreen";
 const Stack = createStackNavigator();
 
 App = () => {
@@ -20,6 +20,11 @@ App = () => {
 					name="RepMax"
 					component={RepMaxScreen}
 					options={{ title: "Calculate 1 RM" }}
+				/>
+				<Stack.Screen
+					name="PlateCalculator"
+					component={PlateCalculatorScreen}
+					options={{ title: "Calculate Plates Needed" }}
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>

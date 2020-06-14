@@ -5,7 +5,13 @@ const HomeScreen = ({ navigation }) => {
 	return (
 		<View style={styles.backgroundColor}>
 			<TouchableOpacity onPress={() => navigation.navigate("RepMax")}>
-				<Text style={styles.buttonStyle}>Go to Rep Max Screen</Text>
+				<Text style={styles.buttonStyle}>Go to Rep Max Calculator</Text>
+			</TouchableOpacity>
+
+			<TouchableOpacity
+				onPress={() => navigation.navigate("PlateCalculator")}
+			>
+				<Text style={styles.buttonStyle}>Go to Plate Calculator</Text>
 			</TouchableOpacity>
 		</View>
 	);
